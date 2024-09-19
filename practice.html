@@ -7,6 +7,45 @@
     <link href="/script/practice.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- lesson 11 -->
+     <div class="container py-3">
+     <form id="newform" name="newform">
+      <div class="row">
+        <div class="col">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="fname" class="form-control"></input>    
+        </div>
+        <div class="col">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lname" class="form-control"></input>    
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="feedback">Leave your feedback</label>
+          <textarea class="form-control" rows="5" id="feedback"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="enter your email here"></input>    
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="contactNumber">Contact Number <span class="text-danger">*</span></label>
+          <input type="number" id="contactNumber" name="contactnum" class="form-control"></input>    
+          <p id="contactNumValidation" class="text-danger d-none">You can't leave this blank!</p>
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary" onclick="validate();">Send</button>
+        </div>
+      </div>
+     </form>
+    </div>
     <!-- lesson 10 -->
     <div class="container py-5">
     <table class="table table-bordered table-striped table-hover">
@@ -80,5 +119,8 @@
     <h5 class="p3resilience prefects roboticsclub">h5 is smaller in text size compared to h4</h5>
     <h6 class="p3resilience">heading 6 is the smallest font</h6>
     <p id="jovan1234">Some more text. A new paragraph.</p>
+
+    <!-- add at last line before closing body tag -->
+    <script src="script/validate.js"></script>
   </body>
 </html>

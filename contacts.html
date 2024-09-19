@@ -48,24 +48,43 @@
 			</div>
 		</div>
 		<!-- Key section -->
-		<form class="container py-3">
+		<form class="container py-3" id="newform">
 			<div class="row gy-3">
+				<div class="col-6">
 				<!-- Label: Name*
 						 Text Input field -->
-
+					<label for="nameValue">Name</label>
+					<input type="text" id="nameValue" placeholder="Enter your name" class="form-control">
+					<p id="nameValueError" class="text-danger d-none">Name cannot be left blank!</p>
+				</div>
+				<div class="col-6">
 				<!-- Label: Email Address*
 						 Email Input field -->
-
+					<label for="emailValue">Email</label>
+					<input type="email" id="emailValue" placeholder="Enter your email" class="form-control">
+					<p id="emailValueError" class="text-danger d-none">Email cannot be left blank!</p>
+				</div>
+				<div class="col-12">
 				<!-- Label: Subject*
-						 Text Input field with placeholder text "Enquiry on how to code"-->
-
+						Text Input field with placeholder text "Enquiry on how to code"-->
+					<label for="subjectValue">Subject</label>
+					<input type="text" id="subjectValue" placeholder="E.g. How to join as member" class="form-control">						 
+				</div>
+				<div class="col-12">
 				<!-- Label: Subject*
 						 Textarea field with the row attribute of value 5-->
+					<label for="contents">Contents</label>
+					<textarea id="contents" class="form-control" rows="5"></textarea>
+				</div>
 			</div>
+			<div class="pt-3">
 			<!-- Code a blue "Send" button inside a <div> according to the criteria stated -->
+				<button type="button" onclick="validate();" class="btn btn-primary">Send</button>
+			</div>
 		</form>
 	</article>
 	<!-- End of coding region -->
 	<footer class="bg-dark text-light"><div class="container py-2 pb-4">Done by Computhink Kids SG.</div></footer>
+	<script src="script/contacts.js"></script>
 </body>
 </html>
