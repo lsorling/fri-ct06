@@ -6,7 +6,6 @@
 	<title>Byte Buster Coding Club</title>
 	<script src="script/jquery.min.js"></script>
 	<script src="script/bootstrap.js"></script>
-	<script src="script/projects.js"></script>
 	<link href="script/bootstrap.css" rel="stylesheet"/>
 	<link href="img/favicon-bbcc.png" rel="icon"/>
 	<link href="script/projects.css" rel="stylesheet"/>
@@ -57,7 +56,10 @@
 			</ul>
 			<div class="tab-content">
 				<div class="tab-pane fade show active" id="scratch">
-					hello!
+					<h3>Monke & Banana</h3>
+					<iframe src="https://scratch.mit.edu/projects/808392264/embed" title="Monke & Banana" width="485" height="402"></iframe>
+					<h3>Platformer Game</h3>
+					<iframe src="https://scratch.mit.edu/projects/779856092/embed" title="Platformer Game" width="485" height="402"></iframe>
 				</div>
 				<!-- Create two tabs for Project Showcase
 	-  The first tab should have
@@ -70,7 +72,15 @@
 						- One of them should be named "Pause Animation" with an ID of "canvasPause" with a red looking appearance.
 						- Another one should be named "Play Animation"  with an ID of "canvasPlay" with a green looking appearance.  -->
 				<div class="tab-pane fade" id="canvas">
-					see me canvas
+					<div>
+						<canvas id="canvasBoard" class="border border-dark" width="800" height="600"></canvas>
+					</div>
+					<div class="btn-group">
+						<input class="btn-check" type="radio" name="animated" checked id="pauseAnimation">
+						<label class="btn btn-outline-danger" for="pauseAnimation">Pause Animation</label>
+						<input class="btn-check" type="radio" name="animated" id="playAnimation">
+						<label class="btn btn-outline-success" for="playAnimation">Play Animation</label>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -79,5 +89,6 @@
 	<footer class="bg-dark text-light">
 		<div class="container py-2 pb-4">Done by Computhink Kids SG.</div>
 	</footer>
+	<script src="script/projects.js"></script>
 </body>
 </html>

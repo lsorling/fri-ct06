@@ -7,6 +7,18 @@
     <link href="/script/practice.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="container">
+      <canvas id="canvasB" class="border border-dark" width="800" height="600"></canvas>
+    </div>
+    <script>
+      const drawC = document.getElementById("canvasB");
+      console.log(drawC);
+      let ctx = drawC.getContext("2d");
+      ctx.font = "50px Comic Sans MS";
+      ctx.textAlign = "center";
+      ctx.fillText("Hello World", 250, 50);
+
+    </script>
     <!-- lesson 11 -->
      <div class="container py-3">
      <form id="newform" name="newform">
